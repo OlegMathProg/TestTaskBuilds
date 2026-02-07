@@ -1,0 +1,56 @@
+object F_Switch_Pages: TF_Switch_Pages
+  Left = 599
+  Height = 59
+  Top = 282
+  Width = 444
+  Caption = 'Switch Pages'
+  ClientHeight = 59
+  ClientWidth = 444
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnMouseLeave = FormMouseLeave
+  OnResize = FormResize
+  LCLVersion = '2.2.0.4'
+  object BB_Prev: TBitBtn
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = BB_Next
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 40
+    Top = 8
+    Width = 216
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Prev'
+    Color = clInactiveBorder
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 8863039
+    Font.Height = 22
+    Font.Name = '@Malgun Gothic'
+    Font.Style = [fsBold]
+    OnClick = BB_PrevClick
+    OnMouseLeave = FormMouseLeave
+    ParentFont = False
+    TabOrder = 0
+  end
+  object BB_Next: TBitBtn
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 216
+    Height = 40
+    Top = 8
+    Width = 228
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Next'
+    Color = clInactiveBorder
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 8863039
+    Font.Height = 22
+    Font.Name = '@Malgun Gothic'
+    Font.Style = [fsBold]
+    OnClick = BB_NextClick
+    OnMouseLeave = FormMouseLeave
+    ParentFont = False
+    TabOrder = 1
+  end
+end
